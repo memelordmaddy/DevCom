@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>   
+    <link rel="stylesheet" href="devcomstyle.css">
+    <script src="devcomjavascript.js"></script>
+    <title>Madhav Devcom Portfolio</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#" onclick="showHome()">Home</a></li>
+            <li><a href="#" onclick="showHobbies()">Hobbies</a></li>
+            <li><a href="#" onclick="showContact()">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="homeSection">
+        <h2>Welcome to my portfolio website!</h2>
+        <h3>You may use this website to know more about myself and in case of any queries, feel free to use the contact option to reach out to me through Mail/Github/LinkedIn.</h3>
+        <a id="dontClickLink" href="https://youtu.be/dQw4w9WgXcQ?si=IkzWDLgPwzJhbwGh" target="_blank" >Don't click on this link at all costs</a>
+    </section>
+
+    <section id="hobbiesSection" style="display: none;">
+        <h2>My Hobbies</h2>
+        <div class="hobby">
+            <h3>Quizzing</h3>
+            <p>I've always enjoyed reading up random stuff which ends up being useful for acing quizzes. IITB gave me the opportunity to be a part of the Inter IIT Quiz contingent, and I'm looking forward to attending more quizzes representing IITB.
+                <br><a href="#" onclick="quiz()">click for a quick question</a>                
+            </p>
+        </div>
+        <div id="quizSection" style="display: none;">
+            <h4>Quiz</h4>
+            <p>Q1: ‘Helicopter parent’ is a term for a parent who is overattentive and overly fearful of a child’s experiences and problems. A similar term popular in the Scandinavian countries was coined by the Danish psychologist Bent Hougaard to refer to parents who try to clear away obstacles in their offspring’s path so that their child can go through life without the slightest bump. <br>ID the sport after which the term is named after
+                </p>
+            <form id="quizForm">
+                <input type="text" id="answerInput">
+                <button type="submit">Submit</button>
+            </form>
+            <div id="quizResult"></div>
+        </div>
+        <div class="hobby">
+            <h3>Football</h3>
+            <p>Hailing from a place known for its Football culture, I've invested a significant part of my life playing and watching football. I'm a loyal fan of FC Barcelona, supporting the team through their ups and downs (mostly downs these days) has taught me numerous life lessons.</p>
+        </div>
+        <div class="hobby">
+            <h3>Reading Non-fiction</h3>
+            <p>Did I start reading non-fiction for quizzing or start quizzing because I read non-fiction? I don't know, to be honest. Either way, I love reading non-fiction and try my best to find time to read.</p>
+        </div>
+    </section>
+
+    <section id="contactSection" style="display: none;">
+        <!-- Contact details go here -->
+        <h2>Contact Me</h2>
+        <ul>
+            <li><a href="mailto:madhavrbabu@gmail.com" target="_blank">Email</a></li>
+            <li><a href="https://github.com/memelordmaddy" target="_blank">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/madhav-r-babu-b195b9201/" target="_blank">LinkedIn</a></li>
+        </ul>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

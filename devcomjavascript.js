@@ -24,10 +24,8 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 function quiz() {
-    document.getElementById("quizSection").style.display = "block"; // Show the quiz section
-
-    // Add event listener to the quiz form
-    document.getElementById("quizForm").addEventListener("submit", function(event) {
+    document.getElementById("quizSection").style.display = "block"; 
+   document.getElementById("quizForm").addEventListener("submit", function(event) {
         event.preventDefault(); // Prevent form submission
 
         var answer = document.getElementById("answerInput").value.trim().toLowerCase();
